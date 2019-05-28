@@ -56,19 +56,7 @@
    ```
    
 # 配置：
-    1、在工程的gradle文件中添加以下语句：
-    ```
-    allprojects {
-
-        repositories {
-            ...
-            maven {
-                url 'https://dl.bintray.com/supluo/maven'
-            }
-       }
-    ```
-    
-    2、添加依赖,在module的gradle文件中添加以下语句：
+    添加依赖,在module的gradle文件中添加以下语句：
     ```
         implementation 'halo.android.widget:ellipsizeendtagtextview:1.0'
     ```
