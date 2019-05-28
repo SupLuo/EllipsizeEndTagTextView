@@ -8,15 +8,15 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import halo.android.widget.EllipsizeEndTagTextView
+import halo.android.widget.applyEndTagEllipsizeText
 
-class MainActivity : AppCompatActivity() {
+class MainKtActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val normalText = findViewById<TextView>(R.id.normalText)
-
         EllipsizeEndTagTextView.setEndTagForEllipsizeText(normalText,
             "常规控件：这是一个很长很长的文本这是一个很长很长的文本这是一个很长很长的文本这是一个很长很长的文" +
                     "本这是一个很长很长的文本这是一个很长很长的文本这是一个很长很长的文本这是一个很长很长的文本这是一个很长很长的文本这是一个" +
@@ -24,7 +24,9 @@ class MainActivity : AppCompatActivity() {
                     "这是一个很长很长的文本这是一个很长很长的文本这是一个很长很长的文本这是一个很长很长的文本",
             "可以点击",
             Color.RED,
-            View.OnClickListener { Toast.makeText(this@MainActivity, "点击了文本控件", Toast.LENGTH_LONG).show() })
+            View.OnClickListener { Toast.makeText(this@MainKtActivity, "点击了文本控件", Toast.LENGTH_LONG).show() })
+
+        findViewById<EllipsizeEndTagTextView>(R.id.customTextView)
 
         findViewById<View>(R.id.listSample).setOnClickListener {
             AlertDialog.Builder(it.context)
