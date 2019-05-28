@@ -1,3 +1,4 @@
+@file:JvmName("EllipsizeEndTagTextViewKt")
 package halo.android.widget
 
 import android.content.Context
