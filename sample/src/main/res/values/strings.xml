@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EllipsizeEndTagTextView</string>
+
+    <string name="text_string">自定义控件：第二行是一个换行符号(第二行没有文本)\n\n你好123123123123</string>
+</resources>
